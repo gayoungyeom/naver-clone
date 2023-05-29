@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .blind {
@@ -20,7 +21,6 @@ body {
 #wrap-center {
   display: inline-block;
   width: 1280px;
-  border: 2px solid red;
 }
 
 #header {
@@ -28,17 +28,20 @@ body {
   position: relative;
 }
 
-#header-hamburger {
+#header-hamburger,
+#header-naverpay,
+#header-notice {
   position: absolute;
   top: 18px;
-  left: -10px;
   padding: 10px;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-#header-hamburger:hover::before {
+#header-hamburger:hover::before,
+#header-naverpay:hover::before,
+#header-notice:hover::before {
   content: '';
   position: absolute;
   top: 1px;
@@ -50,15 +53,42 @@ body {
   border-radius: 50%;
 }
 
-#header-hamburger > div {
+#header-hamburger > div,
+#header-naverpay > div,
+#header-notice > div {
   width: 26px;
   height: 26px;
   background-image: url('./sp_main.png');
   background-size: 422px 405px;
-  background-position: -335px -284px;
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
+}
+
+#header-hamburger {
+  left: -10px;
+}
+
+#header-hamburger > div {
+  background-position: -335px -284px;
+}
+
+#header-naverpay {
+  right: 42px;
+  padding: 10px 8px;
+}
+
+#header-naverpay > div {
+  width: 30px;
+  background-position: -31px -316px;
+}
+
+#header-notice {
+  right: -10px;
+}
+
+#header-notice > div {
+  background-position: -364px -27px;
 }
 
 #main {
