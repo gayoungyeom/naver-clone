@@ -14,6 +14,19 @@ body {
   border: 2px solid red;
 }
 
+#header-hamburger {
+  padding: 10px;
+}
+
+#header-hamburger > div {
+  width: 26px;
+  height: 26px;
+  background-image: url('./sp_main.png');
+  background-size: 422px 405px;
+  background-position: -335px -284px;
+  background-repeat: no-repeat;
+}
+
 #main {
   height: 1000px;
 }
