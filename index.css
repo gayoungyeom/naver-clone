@@ -14,8 +14,20 @@ body {
   border: 2px solid red;
 }
 
+#header {
+  text-align: left;
+}
+
 #header-hamburger {
   padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#header-hamburger:hover {
+  background-color: var(--color_option_bg);
+  border-radius: 50%;
 }
 
 #header-hamburger > div {
