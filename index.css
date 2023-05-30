@@ -338,20 +338,18 @@ ul {
 }
 
 /* main */
-main {
-  margin-top: 52px;
+#main {
+  margin-top: 54px;
   display: flex;
 }
 
 #main-left {
   width: 830px;
   margin-right: 30px;
-  /* background-color: #d0e9db; */
 }
 
 #main-right {
   width: 420px;
-  /* background-color: antiquewhite; */
 }
 
 /* id가 ad로 끝나는 aside */
@@ -386,6 +384,85 @@ section[id^='main'] {
 
 #main-login {
   height: 164px;
+  padding: 21px 20px 18px 20px;
+}
+
+#main-login > p {
+  font-size: 1.4rem;
+  margin: 5px;
+}
+
+#main-login > button {
+  width: 380px;
+  height: 56px;
+  border: 1px solid #03c75a;
+  border-radius: 4px;
+  background-color: #03c75a;
+  font-size: 1.4rem;
+  color: #fff;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+#main-login > button > div {
+  background-image: url(./sp_main.png);
+  background-size: 422px 405px;
+  background-position: -120px -166px;
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: -2px;
+}
+
+#main-login > button > span {
+  margin-left: 4px;
+}
+
+#main-login > ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  list-style: none;
+  margin-top: 15px;
+}
+
+#main-login > ul li:hover {
+  text-decoration: underline;
+}
+
+#main-login > ul a::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: var(--color_dot_divider);
+  margin: 4px 10px 0;
+}
+
+#main-login > ul > li:first-child a::before {
+  display: none;
+}
+
+#main-login > ul a {
+  font-size: 1.3rem;
+  color: var(--color_caption2);
+  text-decoration: none;
+  letter-spacing: -0.4px;
+}
+
+#main-login > ul a:visited {
+  color: inherit;
+}
+
+.main-weather-stock {
+  padding: 0 18px;
+}
+
+.main-weather-stock > header {
+  height: 40px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--color_border_in);
 }
 
 #main-weather {
