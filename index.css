@@ -118,6 +118,17 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+#search > form:focus-within #search-svg::after {
+  content: '';
+  width: 1px;
+  height: 20px;
+  background-color: #e4e4e4;
+  position: absolute;
+  top: 20;
+  right: 0;
 }
 
 #search-svg svg {
@@ -140,7 +151,7 @@ form {
 }
 
 #search-input:focus::placeholder {
-  color: #ebebeb;
+  color: #e4e4e4;
   font-weight: normal;
 }
 
