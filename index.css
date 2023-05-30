@@ -7,6 +7,17 @@ body,
 form {
   margin: 0;
   padding: 0;
+  font-size: 10.5px;
+  line-height: 10.5px;
+  letter-spacing: -0.4px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕',
+    helvetica, 'Apple SD Gothic Neo', sans-serif;
+}
+
+form,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .blind {
@@ -140,7 +151,7 @@ form {
 #search-input {
   width: 480px;
   padding: 17px 0;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
   border: none;
   outline: none;
@@ -209,4 +220,119 @@ form {
 
 #main {
   height: 1000px;
+}
+
+/* nav */
+#nav {
+  margin-top: 12px;
+}
+
+#nav ul {
+  display: inline-flex;
+  justify-content: center;
+  width: 676px;
+}
+
+#nav li {
+  width: 64px;
+  list-style: none;
+  margin-left: 4px;
+}
+
+#nav li:first-child {
+  margin-left: 0;
+}
+
+#nav li a:visited {
+  color: black;
+}
+
+#nav li div {
+  margin: 0 auto;
+  position: relative;
+}
+
+#nav li div {
+  width: 54px;
+  height: 54px;
+  text-align: center;
+}
+
+#nav li div::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -2px;
+  z-index: -1;
+  background-image: url(./sp_main.png);
+  background-size: 422px 405px;
+  background-position: 0px -128px;
+  background-repeat: no-repeat;
+  width: 54px;
+  height: 54px;
+}
+
+#nav li div::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 44px;
+  height: 44px;
+  background-image: url(./sp_main.png);
+  background-size: 422px 405px;
+  background-repeat: no-repeat;
+}
+
+#nav li span {
+  display: inline-block;
+  width: 64px;
+  margin-top: 6px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+#nav li:nth-of-type(1) div::after {
+  background-position: -250px -90px;
+}
+
+#nav li:nth-of-type(2) div::after {
+  background-position: -250px 0px;
+}
+
+#nav li:nth-of-type(3) div::after {
+  background-position: -201px -98px;
+}
+
+#nav li:nth-of-type(4) div::after {
+  background-position: -90px -209px;
+}
+
+#nav li:nth-of-type(5) div::after {
+  background-position: 0px -209px;
+}
+
+#nav li:nth-of-type(6) div::after {
+  background-position: -180px -209px;
+}
+
+#nav li:nth-of-type(7) div::after {
+  background-position: -45px -209px;
+}
+
+#nav li:nth-of-type(8) div::after {
+  background-position: -201px 0px;
+  width: 48px;
+  height: 48px;
+  top: 0px;
+  left: 3px;
+}
+
+#nav li:nth-of-type(9) div::after {
+  background-position: -225px -209px;
+}
+
+#nav li:nth-of-type(10) div::after {
+  background-position: -250px -135px;
 }
